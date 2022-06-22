@@ -3,7 +3,7 @@
 
 <h1> Acceptance Tests </h1>
 
-1. <h1> Addition </h1>
+<h1>1. Addition </h1>
 
 - Start the application by clicking on Run.
 - Choose menu option number 1 (Addition).
@@ -13,7 +13,7 @@
 
 
 
-2. <h1> Multiplication </h1>
+<h1>2. Multiplication </h1>
 
 - Start the application by clicking on Run.
 - Choose menu option number 4 (multiplication).
@@ -23,7 +23,7 @@
 
 
 
-3. <h1> PrintAllTheCalulations </h1>
+<h1>3. PrintAllTheCalulations </h1>
 
 - Start the application by clicking on Run.
 - Choose menu option 3 (Divison).
