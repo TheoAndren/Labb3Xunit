@@ -78,12 +78,22 @@ namespace Labb3Xunit
                         Console.WriteLine("\tDivision\n");
                         calcType = "/";
 
-                        // User input
-                        Console.Write("Enter first number: ");
-                        num1 = Calculator.UserInput(Console.ReadLine());
+                        while (num1 == 0 || num2 == 0)
+                        {
+                            // User input
+                            Console.Write("Enter first number: ");
+                            num1 = Calculator.UserInput(Console.ReadLine());
 
-                        Console.Write("Enter second number: ");
-                        num2 = Calculator.UserInput(Console.ReadLine());
+                            Console.Write("Enter second number: ");
+                            num2 = Calculator.UserInput(Console.ReadLine());
+
+                            if (num1 == 0 || num2 == 0)
+                            {
+                                Console.WriteLine("You cant divide with 0, press ENTER to pick again.");
+                                Console.ReadKey();
+                                Console.Clear();
+                            }
+                        }
 
                         calculations.Add(Calculator.PrintResult(num1, num2, Calculator.Division(num1, num2), calcType));
                         break;

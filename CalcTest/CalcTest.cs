@@ -105,6 +105,19 @@ namespace CalculatorTest
         }
 
         [Fact]
+        [Trait("Category", "Divison")]
+        public void Divide_with_0_Throws()
+        {
+            // Assert
+            int num1 = 10;
+            int num2 = 0;
+
+            // Act + Assert
+            Assert.Throws<ArgumentException>(() => Calculator.Division(num1, num2));
+        }
+
+
+        [Fact]
         [Trait("Category", "Multiplication")]
         public void Multiply_18_With_9_Return_162_MultiplicationTest()
         {
